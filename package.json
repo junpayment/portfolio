@@ -6,7 +6,7 @@
   "scripts": {
     "build-production": "webpack --config webpack.config.production.js",
     "build-development": "webpack --config webpack.config.development.js",
-    "start": "webpack serve --config webpack.config.development.js --open",
+    "start": "webpack serve --config webpack.config.development.js --open --history-api-fallback",
     "test": "jest"
   },
   "keywords": [],

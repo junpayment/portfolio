@@ -4,5 +4,5 @@ module.exports = {
   ...base, ...{
     mode: 'development',
     devtool: 'source-map',
-  }
+  },
 }

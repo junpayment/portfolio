@@ -2,7 +2,9 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './src/app/app.tsx',
+  entry: [
+    './src/app.tsx',
+  ],
   devtool: 'source-map',
   plugins: [
     new CleanWebpackPlugin({
@@ -10,6 +12,10 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: 'src/templates/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/templates/404.html',
+      filename: '404.html'
     }),
   ],
   output: {
